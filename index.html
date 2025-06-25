@@ -14,6 +14,21 @@
       color: #1f2937;
       line-height: 1.6;
     }
+    nav {
+      background: #0f172a;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
     header {
       background: #0f172a;
       color: #fff;
@@ -63,13 +78,25 @@
       color: #fff;
       margin-top: 2rem;
     }
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      margin-top: 1rem;
+    }
     @media (max-width: 600px) {
       header h1 { font-size: 2rem; }
       section { margin: 1rem; padding: 1.5rem; }
+      nav { flex-direction: column; align-items: center; }
     }
   </style>
 </head>
 <body>
+
+  <nav>
+    <a href="#gallery">Gallery</a>
+    <a href="#recommendation">Recommendation Letter</a>
+  </nav>
 
   <header>
     <h1>My Robotics & Mechatronics Portfolio</h1>
@@ -84,30 +111,36 @@
   <section>
     <h2>Skills</h2>
     <ul>
-      <li>Programming: Python, C++, Arduino</li>
-      <li>Microcontrollers: Arduino, Raspberry Pi</li>
-      <li>CAD Design: Tinkercad, Fusion 360</li>
-      <li>3D Printing, Basic Electronics, Sensors</li>
+      <li>STEM competition experience (MakeX, Drone Odyssey, IDE Series)</li>
+      <li>Coding, electronics, and robotics</li>
+      <li>Teamwork and collaboration under pressure</li>
+      <li>Creativity, leadership, and initiative</li>
+      <li>Critical thinking and independent problem-solving</li>
     </ul>
   </section>
 
   <section>
     <h2>Projects</h2>
     <ul>
-      <li><strong>Obstacle Avoiding Robot:</strong> Built using Arduino, ultrasonic sensor, and servo motors.</li>
-      <li><strong>Smart Plant Watering System:</strong> Uses soil moisture sensor and pump to automate watering.</li>
-      <li><strong>Line Following Robot:</strong> IR sensors and basic PID logic for line detection.</li>
+      <li><strong>Smart Food Waste Sorting System:</strong> A project designed to identify and sort food waste using color detection and applied AI. It uses sensors and a camera to recognize different types of waste, and a mechanical arm to separate items based on their category.</li>
+      <li><strong>Object Recognition with Machine Learning:</strong> Integrated a custom-trained machine learning model to distinguish between food and non-food items, improving sorting accuracy through continuous learning from sample data.</li>
     </ul>
   </section>
 
-  <section>
+  <section id="gallery">
     <h2>Gallery</h2>
     <p>Photos from my projects and build process.</p>
     <div class="gallery">
-      <img src="project1.jpg" alt="Obstacle Avoiding Robot">
-      <img src="project2.jpg" alt="Smart Watering System">
-      <img src="project3.jpg" alt="Line Follower Robot">
+      <img src="project1.jpg" alt="Food Waste Sorting System">
+      <img src="project2.jpg" alt="Object Recognition with AI">
+      <img src="project3.jpg" alt="Machine Learning Integration">
     </div>
+  </section>
+
+  <section id="recommendation">
+    <h2>Letter of Recommendation</h2>
+    <p>Below is a recommendation letter written by my teacher in support of my application:</p>
+    <iframe src="https://docs.google.com/document/d/e/2PACX-1vQz_DamY2qfKUFRHIelepydcEmklCda1Y4Wx9e9M6Xuhes-_C-OZ6PBMpww8fYU22ewxPhZZ3pB3WJX/pub?embedded=true"></iframe>
   </section>
 
   <section>

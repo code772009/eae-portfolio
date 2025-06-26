@@ -31,12 +31,20 @@
     }
     .gallery-item {
       text-align: center;
-      max-width: 350px;
+      max-width: 500px;
+      flex: 1 1 45%;
     }
     .gallery-item img {
       width: 100%;
       border-radius: 0.5rem;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .gallery-item.full-width {
+      max-width: 100%;
+    }
+    .gallery-item.full-width img {
+      max-width: 100%;
+      max-height: none;
     }
     .gallery-item p {
       margin-top: 0.5rem;
@@ -62,28 +70,45 @@
     <p>Photos from my robotics and mechatronics projects.</p>
     <div class="gallery">
       <div class="gallery-item">
-        <img src="project1.jpg" alt="Food Waste Sorter">
+        <a href="project1.jpg" target="_blank">
+          <img src="project1.jpg" alt="Food Waste Sorter">
+        </a>
         <p>Food Waste Sorter (Color-Based)</p>
       </div>
+
       <div class="gallery-item">
-        <img src="project2.jpg" alt="Drone">
+        <a href="project2.jpg" target="_blank">
+          <img src="project2.jpg" alt="Drone">
+        </a>
         <p>Drone used in drone odessy</p>
       </div>
-      <div class="gallery-item">
-        <img src="project3.jpg" alt="Drone">
+
+     <div class="gallery-item">
+        <a href="project3.jpg" target="_blank">
+          <img src="project3.jpg" alt="Drone">
+        </a>
         <p>Drone used in drone odessy</p>
       </div>
+
       <div class="gallery-item">
-        <img src="project4.jpg" alt="Sensor Wiring">
+        <a href="project4.jpg" target="_blank">
+          <img src="project4.jpg" alt="Sensor Wiring">
+        </a>
         <p>Sensor Wiring & Microcontroller Setup</p>
       </div>
-      <div class="gallery-item">
-        <img src="project5.jpg" alt="CAD Design">
+
+      <div class="gallery-item full-width">
+        <a href="project5.jpg" target="_blank">
+          <img src="project5.jpg" alt="CAD Design">
+        </a>
         <p>CAD Design of Casing/Chassis</p>
       </div>
-      <div class="gallery-item">
-        <img src="project6.jpg" alt="Testing">
-        <p>System Testing & Calibration</p>
+
+      <div class="gallery-item full-width">
+        <a href="project6.jpg" target="_blank">
+          <img src="project6.jpg" alt="Testing Code">
+        </a>
+        <p>System Testing & Calibration (Code View)</p>
       </div>
     </div>
 
